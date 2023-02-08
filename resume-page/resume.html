@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <button id="prev-btn">Previous</button>
+        <input
+          type="text"
+          id="search"
+          name="search"
+          class="search-box"
+          placeholder="Search for keywords to filter the resume"
+        />
+        <button id="next-btn">Next</button>
+      </header>
+      <div class="noResult-container" id="noResult-container">
+        <img
+          src="../resources/sadSmiley.png"
+          alt="Avatar"
+          class="no-result-image"
+        />
+        <p class="no-result-text">
+          <b>**Invalid Search or No Applications for this Job**</b>
+        </p>
+      </div>
+      <div class="resume-container" id="resume-container">
+        <div class="resume-header">
+          <div class="hidden"></div>
+          <div id="basic-info">
+            <h1 id="name">...</h1>
+            <p class="position">Applied For: <span id="appliedFor"></span></p>
+          </div>
+          <img
+            src="../resources/demo.png"
+            alt="Avatar"
+            class="candidate-image"
+          />
+        </div>
+        <div class="sections">
+          <section id="left-pane">
+            <div id="personal-info" class="left">
+              <h2>Personal Information</h2>
+              <p id="phone">9999999999</p>
+              <p id="email">email</p>
+              <p id="linkedin">linkedin</p>
+            </div>
+            <div id="technicalskill" class="left">
+              <h2>Technical Skills</h2>
+              <p id="tech-skill">skill1</p>
+            </div>
+            <div id="Hobbies" class="left">
+              <h2>Hobbies</h2>
+              <p id="hobby1">hobby1</p>
+            </div>
+          </section>
+          <section id="main">
+            <div id="work-exp">
+              <h2>Work Experience in previous Company</h2>
+              <p>Company Name:</p>
+              <p>Positon:</p>
+              <p>Start date:</p>
+              <p>End Date:</p>
+              <p>Summary:</p>
+            </div>
+            <div id="projects">
+              <h2>Projects</h2>
+              <p></p>
+            </div>
+            <div id="education">
+              <h2>Education</h2>
+              <ul>
+                <li>UG</li>
+                <li>PU</li>
+                <li>HS</li>
+              </ul>
+            </div>
+            <div id="internship">
+              <h2>Internship</h2>
+              <ul>
+                <li>Company Name</li>
+                <li>Position</li>
+                <li>Start date</li>
+                <li>End date</li>
+                <li>Summary</li>
+              </ul>
+            </div>
+            <div id="achievement">
+              <h2>Achievements</h2>
+              <p id="achievements"></p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="resume.js"></script>
+  </body>
+</html>
